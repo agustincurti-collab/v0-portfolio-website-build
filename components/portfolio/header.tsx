@@ -74,9 +74,6 @@ export function Header() {
               <Link href="#process" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Process
               </Link>
-              <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                About
-              </Link>
               <Button className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground w-full mt-2">
                 {"Start a Project"}
               </Button>
