@@ -49,6 +49,8 @@ export function Footer() {
             </Link>
             <p className="text-sm text-muted-foreground">
               Digital designer & developer crafting modern digital experiences.
+              <br />
+              Based in Buenos Aires, Argentina 🇦🇷 — working with clients worldwide.
             </p>
           </div>
 
