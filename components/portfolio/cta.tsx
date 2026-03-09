@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button"
 
 export function CTA() {
   return (
-    <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative py-28 px-4 sm:px-6 lg:px-8 overflow-hidden bg-background">
 
-      {/* Background gradient */}
-      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-background via-background to-secondary/40"></div>
+      {/* Gradient background */}
+      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-background via-background to-purple-500/10" />
 
-      {/* Glow effects */}
-      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-accent/30 blur-[160px] rounded-full -z-10"></div>
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-purple-500/20 blur-[140px] rounded-full -z-10"></div>
+      {/* Glow lights */}
+      <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-purple-500/20 blur-[200px] rounded-full -z-10" />
+      <div className="absolute bottom-[-150px] right-[-150px] w-[500px] h-[500px] bg-blue-500/20 blur-[180px] rounded-full -z-10" />
 
       <div className="max-w-4xl mx-auto text-center">
 
@@ -25,7 +25,7 @@ export function CTA() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 
-          <Button className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 h-auto text-base shadow-lg">
+          <Button className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 h-auto text-base shadow-xl">
             Start a Project
           </Button>
 
