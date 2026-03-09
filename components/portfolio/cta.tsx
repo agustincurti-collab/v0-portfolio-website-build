@@ -2,8 +2,11 @@ import { Button } from "@/components/ui/button"
 
 export function CTA() {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#0f172a] to-[#1e293b]">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] relative overflow-hidden">
+      {/* Subtle glow effects */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-violet-500/10 rounded-full blur-3xl" />
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 text-balance">
           Ready to build the
           <br />
