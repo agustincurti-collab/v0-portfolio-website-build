@@ -1,8 +1,8 @@
 const stats = [
   { value: "5+", label: "YEARS EXPERIENCE" },
-  { value: "80+", label: "PROJECTS COMPLETED" },
+  { value: "50+", label: "PROJECTS COMPLETED" },
   { value: "40+", label: "HAPPY CLIENTS" },
-  { value: "12", label: "DESIGN AWARDS" },
+  { value: "10+", label: "WEB TECHNOLOGIES" },
 ]
 
 export function Stats() {
