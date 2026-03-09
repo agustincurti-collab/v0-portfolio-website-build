@@ -5,13 +5,34 @@ import Link from "next/link"
 import { Search, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+const navItems = [
+  { href: "#work", label: "Work" },
+  { href: "#services", label: "Services" },
+  { href: "#process", label: "Process" },
+  { href: "#about", label: "About" },
+]
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [activeSection, setActiveSection] = useState("")
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10)
+
+      // Detect active section
+      const sections = navItems.map((item) => item.href.slice(1))
+      const scrollPosition = window.scrollY + 100
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i])
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(sections[i])
+          return
+        }
+      }
+      setActiveSection("")
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -38,18 +59,19 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="#work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Work
-            </Link>
-            <Link href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Services
-            </Link>
-            <Link href="#process" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Process
-            </Link>
-            <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              About
-            </Link>
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`text-sm transition-colors ${
+                  activeSection === item.href.slice(1)
+                    ? "text-accent font-medium"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
 
           {/* Desktop Actions */}
@@ -84,18 +106,20 @@ export function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col gap-4">
-              <Link href="#work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Work
-              </Link>
-              <Link href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Services
-              </Link>
-              <Link href="#process" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Process
-              </Link>
-              <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                About
-              </Link>
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`text-sm transition-colors ${
+                    activeSection === item.href.slice(1)
+                      ? "text-accent font-medium"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
               <Button className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground w-full mt-2">
                 {"Let's Talk"}
               </Button>
