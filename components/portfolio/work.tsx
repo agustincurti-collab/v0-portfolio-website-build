@@ -34,7 +34,7 @@ const projects = [
 
 export function Work() {
   return (
-    <section id="work" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="work" className="py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">

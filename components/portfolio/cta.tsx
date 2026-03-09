@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 
 export function CTA() {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/30">
+    <section className="py-36 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/30">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
          Have a project in mind?

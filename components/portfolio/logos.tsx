@@ -11,7 +11,7 @@ const logos = [
 
 export function Logos() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 border-t border-border/50">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-border/50">
       <div className="max-w-7xl mx-auto">
         <p className="text-center text-sm text-muted-foreground mb-10 uppercase tracking-wider">
           Trusted by Industry Leaders
