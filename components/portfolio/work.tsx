@@ -43,7 +43,9 @@ export function Work() {
               Selected Work
             </h2>
             <p className="text-muted-foreground max-w-lg">
-              A curated selection of projects where design meets strategy to create impactful digital experiences.
+              A selection of websites and e-commerce experiences
+designed to combine modern aesthetics,
+high performance and real business impact.
             </p>
           </div>
           <Link
