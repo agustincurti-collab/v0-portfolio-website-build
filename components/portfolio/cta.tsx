@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 
 export function CTA() {
   return (
-    <section className="relative py-28 px-4 sm:px-6 lg:px-8 overflow-hidden bg-background">
+    <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400">
 
       {/* Gradient background */}
       <div className="absolute inset-0 -z-20 bg-gradient-to-b from-background via-background to-purple-500/10" />
