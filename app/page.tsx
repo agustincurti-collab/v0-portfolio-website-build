@@ -6,6 +6,7 @@ import { Services } from "@/components/portfolio/services"
 import { Process } from "@/components/portfolio/process"
 import { Stats } from "@/components/portfolio/stats"
 import { CTA } from "@/components/portfolio/cta"
+import { Partners } from "@/components/portfolio/partners"
 import { Footer } from "@/components/portfolio/footer"
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Services />
       <Process />
       <Stats />
+      <Partners />
       <CTA />
       <Footer />
     </main>
