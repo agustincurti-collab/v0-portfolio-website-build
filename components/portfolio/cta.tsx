@@ -20,7 +20,7 @@ export function CTA() {
         </h2>
 
         <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
-          Tell me about your project and I'll get back to you to discuss how we can bring it to life.
+          Tell me about your VERGERS and I'll get back to you to discuss how we can bring it to life.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
