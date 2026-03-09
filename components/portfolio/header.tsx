@@ -31,9 +31,6 @@ export function Header() {
             <Link href="#process" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Process
             </Link>
-            <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              About
-            </Link>
           </nav>
 
           {/* Desktop Actions */}
@@ -47,7 +44,7 @@ export function Header() {
               />
             </div>
             <Button className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground">
-              {"Let's Talk"}
+              {"Start a project"}
             </Button>
           </div>
 
