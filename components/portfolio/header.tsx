@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Search, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
@@ -34,15 +34,7 @@ export function Header() {
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden md:flex items-center gap-4">
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-              <input
-                type="text"
-                placeholder="Search projects..."
-                className="pl-9 pr-4 py-2 text-sm bg-secondary rounded-full border border-border focus:outline-none focus:ring-2 focus:ring-accent/50 w-40 text-foreground placeholder:text-muted-foreground"
-              />
-            </div>
+          <div className="hidden md:flex items-center">
             <Button className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground">
               {"Start a project"}
             </Button>
