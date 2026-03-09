@@ -13,18 +13,19 @@ export function Hero() {
 
         {/* Main Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-          <span className="text-foreground">Crafting digital</span>
+          <span className="text-foreground">Premium websites and e-commerce 
+</span>
           <br />
           <span className="text-foreground">experiences </span>
           <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-            that matter.
+            for growing brands.
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10">
-          I help forward-thinking companies design and build premium web
-          products. Blending aesthetics with functionality to drive growth.
+         I design and develop modern digital products that combine
+strategy, design and technology to help businesses grow online.
         </p>
 
         {/* CTA Buttons */}
