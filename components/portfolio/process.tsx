@@ -4,17 +4,17 @@ const steps = [
   {
     number: "01",
     title: "Discovery & Strategy",
-    description: "Understanding your goals, target audience, and market landscape to build a solid foundation.",
+    description: "Understanding your business goals,target audience and project requirements to define the right digital strategy.",
   },
   {
     number: "02",
     title: "Design & Prototyping",
-    description: "Creating high-fidelity visuals and interactive prototypes to visualize the final product.",
+    description: "Designing modern interfaces and interactive prototypes to visualize the experience before development begins.",
   },
   {
     number: "03",
     title: "Development & Launch",
-    description: "Building the product with clean code, rigorous testing, and smooth deployment.",
+    description: "Designing modern interfaces and interactive prototypes to visualize the experience before development begins.",
   },
 ]
 
@@ -29,13 +29,12 @@ export function Process() {
               HOW I WORK
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              A streamlined process
+              A simple and transparent process to deliver
               <br />
-              for exceptional results.
+              high-quality digital products.
             </h2>
             <p className="text-muted-foreground mb-12">
-              My workflow is designed to ensure transparency, collaboration, and
-              high-quality deliverables at every stage of the project.
+              Every project follows a structured workflow that ensures clarity, collaboration and high-quality results from concept to launch.
             </p>
 
             {/* Process Steps */}
