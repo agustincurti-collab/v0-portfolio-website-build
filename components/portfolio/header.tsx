@@ -81,7 +81,7 @@ export function Header() {
                 About
               </Link>
               <Button className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground w-full mt-2">
-                {"Let's Talk"}
+                {"Start a Project"}
               </Button>
             </nav>
           </div>
