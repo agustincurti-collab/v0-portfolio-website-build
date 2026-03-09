@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Link from "next/link"
 import { Search, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -12,10 +11,28 @@ const navItems = [
   { href: "#about", label: "About" },
 ]
 
+const HEADER_OFFSET = 80
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState("")
+
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    const targetId = href.slice(1)
+    const targetElement = document.getElementById(targetId)
+    
+    if (targetElement) {
+      const targetPosition = targetElement.offsetTop - HEADER_OFFSET
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth"
+      })
+    }
+    
+    setMobileMenuOpen(false)
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +40,7 @@ export function Header() {
 
       // Detect active section
       const sections = navItems.map((item) => item.href.slice(1))
-      const scrollPosition = window.scrollY + 100
+      const scrollPosition = window.scrollY + HEADER_OFFSET + 20
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = document.getElementById(sections[i])
@@ -60,17 +77,18 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
-                className={`text-sm transition-colors ${
+                onClick={(e) => scrollToSection(e, item.href)}
+                className={`text-sm transition-colors cursor-pointer ${
                   activeSection === item.href.slice(1)
                     ? "text-accent font-medium"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </nav>
 
@@ -107,18 +125,18 @@ export function Header() {
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.href}
                   href={item.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`text-sm transition-colors ${
+                  onClick={(e) => scrollToSection(e, item.href)}
+                  className={`text-sm transition-colors cursor-pointer ${
                     activeSection === item.href.slice(1)
                       ? "text-accent font-medium"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {item.label}
-                </Link>
+                </a>
               ))}
               <Button className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground w-full mt-2">
                 {"Let's Talk"}
