@@ -34,7 +34,7 @@ export function Hero() {
             <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
           <Button variant="outline" className="rounded-full border-border hover:bg-secondary text-foreground px-6 py-3 h-auto">
-            Book a Call
+            Start a Project
           </Button>
         </div>
 
