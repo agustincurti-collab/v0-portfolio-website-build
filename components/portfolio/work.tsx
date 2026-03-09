@@ -65,12 +65,12 @@ high performance and real business impact.
               className={`group cursor-pointer ${index === 0 || index === 3 ? 'md:row-span-1' : ''}`}
             >
               {/* Project Card */}
-              <div className="bg-card rounded-2xl overflow-hidden border border-border hover:border-accent/50 transition-all duration-300">
+              <div className="bg-card rounded-2xl overflow-hidden border border-border hover:border-accent/50 shadow-sm hover:shadow-xl transition-all duration-300">
                 {/* Image */}
                 <div className="relative overflow-hidden bg-gradient-to-br from-purple-900/30 via-blue-900/30 to-pink-900/30 p-6">
                   <div className="aspect-video bg-secondary/50 rounded-lg flex items-center justify-center overflow-hidden">
                     {/* Mock Dashboard UI */}
-                    <div className="w-full h-full p-4">
+                    <div className="w-full h-full p-4 transition-transform duration-300 group-hover:scale-[1.04]">
                       <div className="bg-card/80 rounded-lg h-full p-4 border border-border/50">
                         <div className="h-full flex flex-col gap-2">
                           <div className="flex gap-2 mb-2">
@@ -91,9 +91,20 @@ high performance and real business impact.
                       </div>
                     </div>
                   </div>
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">
+                        {project.tags[0]}
+                      </p>
+                      <h4 className="text-lg font-semibold text-foreground">
+                        {project.title}
+                      </h4>
+                    </div>
+                  </div>
                   {/* AI Tag for some projects */}
                   {(index === 1 || index === 3) && (
-                    <div className="absolute top-4 right-4 px-3 py-1 bg-accent/20 rounded-full border border-accent/30">
+                    <div className="absolute top-4 right-4 px-3 py-1 bg-accent/20 rounded-full border border-accent/30 z-10">
                       <span className="text-xs text-accent font-medium">AI Tech</span>
                     </div>
                   )}
