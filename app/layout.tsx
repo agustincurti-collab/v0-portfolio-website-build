@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { WhatsAppButton } from '@/components/whatsapp-button'
 import './globals.css'
 
 const inter = Inter({ 
@@ -45,6 +46,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
         {children}
+        <WhatsAppButton />
         <Analytics />
       </body>
     </html>
