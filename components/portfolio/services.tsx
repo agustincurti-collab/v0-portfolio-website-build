@@ -46,7 +46,9 @@ export function Services() {
             Expertise & Specialization
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive design and development solutions tailored to elevate your brand and drive results.
+            Design and development services focused on building
+high-performance websites and digital products
+that help businesses grow online.
           </p>
         </div>
 
