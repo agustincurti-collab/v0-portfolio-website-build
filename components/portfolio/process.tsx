@@ -93,8 +93,8 @@ export function Process() {
               </svg>
               {/* Center Content */}
               <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <span className="text-5xl md:text-6xl font-bold text-foreground">100%</span>
-                <span className="text-muted-foreground text-sm mt-2">SUCCESS RATE</span>
+                <span className="text-5xl md:text-6xl font-bold text-foreground">+50</span>
+                <span className="text-muted-foreground text-sm mt-2">PROJECTS DELIVERED</span>
               </div>
             </div>
           </div>
