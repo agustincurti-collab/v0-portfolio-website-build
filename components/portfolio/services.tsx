@@ -3,32 +3,35 @@ import { Palette, Code, Target, Check } from "lucide-react"
 const services = [
   {
     icon: Palette,
-    title: "UI/UX Design",
-    description: "User-centric interfaces that are intuitive, accessible, and visually stunning. I focus on creating seamless experiences.",
+    title: "Web & Product Design",
+    description: "Modern, user-focused design for websites and digital products.I create intuitive interfaces that combine clarity, usability and strong visual identity.",
     features: [
+      "UX/UI Design",
       "Wireframing & Prototyping",
       "Design Systems",
-      "Mobile App Design",
+      "Responsive design"
     ],
   },
   {
     icon: Code,
-    title: "Web Development",
-    description: "Clean, semantic, and performant code. I build websites that are fast, responsive, and SEO-friendly.",
+    title: "Web & E-commerce Development",
+    description: "Fast, scalable websites built with modern technologies. Focused on performance, flexibility and long-term maintainability.",
     features: [
-      "React / Next.js",
-      "Tailwind CSS",
+      "React / Next.js Development",
+      "Shopify and WooCommerce",
       "Headless CMS Integration",
+      "Performance Optimization",
     ],
   },
   {
     icon: Target,
-    title: "Brand Strategy",
-    description: "Defining your brand's voice and visual identity to stand out in a crowded market and connect with your audience.",
+    title: "Optimization and Growth",
+    description: "Improving performance, usability and conversions to turn your website into a powerful business tool.",
     features: [
-      "Logo Design",
-      "Brand Guidelines",
-      "Art Direction",
+      "Website Performance Optimization",
+      "SEO Best Practices",
+      "Conversion Optimization",
+      "Analytics & Tracking"
     ],
   },
 ]
