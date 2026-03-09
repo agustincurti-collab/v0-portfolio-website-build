@@ -2,14 +2,15 @@ import { Button } from "@/components/ui/button"
 
 export function CTA() {
   return (
-<section className="relative py-28 px-4 sm:px-6 lg:px-8 overflow-hidden bg-background">
+<section className="relative py-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
 
   {/* Soft gradient background */}
   <div className="absolute inset-0 -z-20 bg-gradient-to-b from-background via-background to-accent/10" />
 
   {/* Glow lights */}
-  <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-purple-500/20 blur-[160px] rounded-full -z-10"></div>
-  <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/20 blur-[160px] rounded-full -z-10"></div>
+<div className="absolute inset-0 -z-20 bg-gradient-to-b from-transparent via-accent/10 to-transparent" />
+
+<div className="absolute left-1/2 -translate-x-1/2 top-0 w-[700px] h-[500px] bg-purple-500/20 blur-[160px] rounded-full -z-10"></div>
 
       <div className="max-w-4xl mx-auto text-center">
 
