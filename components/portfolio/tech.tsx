@@ -1,10 +1,10 @@
-export function Tech() {
+export function TechStack() {
+
 const tech = [
 { name: "React", icon: "react" },
 { name: "Next.js", icon: "nextdotjs" },
 { name: "TypeScript", icon: "typescript" },
 { name: "Tailwind", icon: "tailwindcss" },
-
 { name: "WordPress", icon: "wordpress" },
 { name: "WooCommerce", icon: "woocommerce" },
 { name: "Tienda Nube", icon: "tiendanube" },
@@ -14,17 +14,15 @@ const tech = [
 { name: "AWS", icon: "amazonaws" },
 
 { name: "Figma", icon: "figma" },
-{ name: "Framer", icon: "framer" },
+{ name: "Framer", icon: "framer" }
 
 ];
 
-return (
-
-
+return ( <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-border"> <div className="max-w-6xl mx-auto">
 
 
     <p className="text-center text-sm text-muted-foreground mb-10 tracking-wide">
-      Modern Technologies I Work With
+      Modern Technologies I Word With
     </p>
 
     <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-10 items-center justify-items-center">
@@ -43,5 +41,9 @@ return (
       ))}
 
     </div>
+
   </div>
 </section>
+
+);
+}
