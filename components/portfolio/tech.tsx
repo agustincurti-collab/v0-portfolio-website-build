@@ -1,4 +1,4 @@
-export function TechStack() {
+export function Tech() {
 
 const tech = [
 { name: "React", icon: "react" },
