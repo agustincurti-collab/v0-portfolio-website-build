@@ -1,11 +1,8 @@
 import { Button } from "@/components/ui/button";
 
 export function CTA() {
-return ( <section className="relative overflow-hidden py-28 px-4 sm:px-6 lg:px-8">
+return ( <section className="relative overflow-hidden py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-purple-900/30 via-background to-blue-900/30">
 
-  <div className="absolute inset-0 -z-20 bg-gradient-to-b from-transparent via-accent/10 to-transparent"></div>
-
-  <div className="absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-purple-500/20 blur-[160px] -z-10"></div>
 
   <div className="mx-auto max-w-4xl text-center">
 
@@ -36,6 +33,7 @@ return ( <section className="relative overflow-hidden py-28 px-4 sm:px-6 lg:px-8
 
   </div>
 </section>
+
 
 );
 }
