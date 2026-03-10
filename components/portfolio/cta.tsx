@@ -18,7 +18,7 @@ return ( <section className="relative overflow-hidden py-28 px-4 sm:px-6 lg:px-8
 
     <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
 
-      <Button className="h-auto rounded-full bg-accent px-8 py-3 text-base text-accent-foreground shadow-xl hover:bg-accent/90">
+      <Button className="h-auto rounded-full bg-accent px-8 py-3 text-base text-accent-foreground shadow-2xl hover:bg-accent/90 transition-all duration-300">
         Start a Project
       </Button>
 
