@@ -2,8 +2,14 @@ import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Hero() {
-return ( <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8"> <div className="max-w-7xl mx-auto text-center">
+return ( <section className="relative overflow-hidden pt-32 pb-20 px-4 sm:px-6 lg:px-8">
 
+
+  {/* Background Glow */}
+  <div className="absolute inset-0 -z-20 bg-gradient-to-b from-purple-900/30 via-background to-blue-900/30"></div>
+  <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-purple-500/20 blur-[180px] rounded-full -z-10"></div>
+
+  <div className="max-w-7xl mx-auto text-center">
 
     {/* Availability Badge */}
     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent/30 bg-accent/10 mb-8 backdrop-blur transition-all duration-300 hover:scale-105">
@@ -32,7 +38,7 @@ return ( <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8"> <div className="
     {/* CTA Buttons */}
     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 
-      <Button className="rounded-full bg-secondary hover:bg-secondary/80 text-foreground px-6 py-3 h-auto transition-all duration-300 hover:scale-[1.04] shadow-lg">
+      <Button className="rounded-full bg-secondary hover:bg-secondary/80 text-foreground px-6 py-3 h-auto transition-all duration-300 hover:scale-[1.04] shadow-xl">
         View Selected Work
         <ArrowRight className="w-4 h-4 ml-2" />
       </Button>
@@ -48,7 +54,7 @@ return ( <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8"> <div className="
 
     {/* Hero Image - Monitor Mockup */}
     <div className="mt-16 relative transition-all duration-500 hover:scale-[1.02]">
-      <div className="bg-secondary rounded-2xl p-4 max-w-4xl mx-auto shadow-xl">
+      <div className="bg-secondary rounded-2xl p-4 max-w-4xl mx-auto shadow-2xl">
         <div className="bg-card rounded-lg overflow-hidden border border-border">
 
           {/* Browser Header */}
@@ -64,10 +70,10 @@ return ( <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8"> <div className="
           <div className="p-6 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-pink-900/20">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-              {/* Chart Area */}
+              {/* Chart */}
               <div className="md:col-span-2 bg-card/50 rounded-lg p-4 backdrop-blur">
                 <div className="h-48 flex items-end gap-2">
-                  {[40, 65, 45, 80, 55, 70, 50, 90, 60, 75, 85, 95].map((height, i) => (
+                  {[40,65,45,80,55,70,50,90,60,75,85,95].map((height,i)=>(
                     <div
                       key={i}
                       className="flex-1 bg-gradient-to-t from-purple-500 to-blue-500 rounded-t"
@@ -77,7 +83,7 @@ return ( <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8"> <div className="
                 </div>
               </div>
 
-              {/* Stats Cards */}
+              {/* Stats */}
               <div className="space-y-4">
 
                 <div className="bg-card/50 rounded-lg p-4 backdrop-blur">
@@ -109,5 +115,7 @@ return ( <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8"> <div className="
 
   </div>
 </section>
+
+
 )
 }
