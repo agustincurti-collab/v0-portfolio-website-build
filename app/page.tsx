@@ -1,6 +1,6 @@
 import { Header } from "@/components/portfolio/header"
 import { Hero } from "@/components/portfolio/hero"
-import { Logos } from "@/components/portfolio/logos"
+import { Tech } from "@/components/portfolio/tech"
 import { Work } from "@/components/portfolio/work"
 import { Services } from "@/components/portfolio/services"
 import { Process } from "@/components/portfolio/process"
