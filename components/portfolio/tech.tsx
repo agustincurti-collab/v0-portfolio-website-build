@@ -7,7 +7,7 @@ const tech = [
 { name: "Tailwind", icon: "tailwindcss" },
 { name: "WordPress", icon: "wordpress" },
 { name: "WooCommerce", icon: "woocommerce" },
-{ name: "Tienda Nube", icon: "tiendanube" },
+{ name: "Tienda Nube", icon: "nuvemshop" },
 { name: "Shopify", icon: "shopify" },
 
 { name: "Vercel", icon: "vercel" },
