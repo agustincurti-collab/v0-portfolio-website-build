@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 export function Hero() {
 return ( <section className="relative overflow-hidden pt-32 pb-20 px-4 sm:px-6 lg:px-8">
 
-
   {/* Background Glow */}
   <div className="absolute inset-0 -z-20 bg-gradient-to-b from-purple-900/30 via-background to-blue-900/30"></div>
   <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-purple-500/20 blur-[180px] rounded-full -z-10"></div>
@@ -51,6 +50,8 @@ return ( <section className="relative overflow-hidden pt-32 pb-20 px-4 sm:px-6 l
       </Button>
 
     </div>
+
+  </div>
 </section>
 )
 }
