@@ -19,6 +19,7 @@ export default function Home() {
       <Services />
       <Process />
       <Stats />
+      <FAQ />
       <CTA />
       <Footer />
     </main>
