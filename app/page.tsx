@@ -5,6 +5,7 @@ import { Work } from "@/components/portfolio/work"
 import { Services } from "@/components/portfolio/services"
 import { Process } from "@/components/portfolio/process"
 import { Stats } from "@/components/portfolio/stats"
+import { FAQ } from "@/components/portfolio/faq"
 import { CTA } from "@/components/portfolio/cta"
 import { Footer } from "@/components/portfolio/footer"
 
