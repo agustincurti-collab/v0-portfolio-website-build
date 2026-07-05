@@ -4,9 +4,32 @@ import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useI18n, waLink } from "@/lib/i18n"
+
+function LangToggle({ className = "" }: { className?: string }) {
+  const { lang, setLang } = useI18n()
+  return (
+    <div className={`text-sm text-muted-foreground flex items-center gap-2 ${className}`}>
+      <button
+        onClick={() => setLang("es")}
+        className={`transition-colors ${lang === "es" ? "text-foreground font-semibold" : "hover:text-foreground"}`}
+      >
+        ES
+      </button>
+      <span>|</span>
+      <button
+        onClick={() => setLang("en")}
+        className={`transition-colors ${lang === "en" ? "text-foreground font-semibold" : "hover:text-foreground"}`}
+      >
+        EN
+      </button>
+    </div>
+  )
+}
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { t, lang } = useI18n()
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
@@ -25,35 +48,28 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <Link href="#work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Work
+              {t.nav.work}
             </Link>
 
             <Link href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Services
+              {t.nav.services}
             </Link>
 
             <Link href="#process" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Process
+              {t.nav.process}
             </Link>
           </nav>
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-6">
 
-            {/* Language Selector */}
-            <div className="text-sm text-muted-foreground flex items-center gap-2">
-              <span className="cursor-pointer hover:text-foreground transition-colors">
-                ES
-              </span>
-              <span>|</span>
-              <span className="cursor-pointer hover:text-foreground transition-colors">
-                EN
-              </span>
-            </div>
+            <LangToggle />
 
             {/* CTA */}
-            <Button className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground">
-              Start a Project
+            <Button asChild className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground">
+              <a href={waLink(lang)} target="_blank" rel="noopener noreferrer">
+                {t.nav.startProject}
+              </a>
             </Button>
 
           </div>
@@ -62,6 +78,7 @@ export function Header() {
           <button
             className="md:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Menu"
           >
             {mobileMenuOpen ? (
               <X className="w-6 h-6 text-foreground" />
@@ -78,27 +95,24 @@ export function Header() {
 
             <nav className="flex flex-col gap-4">
 
-              <Link href="#work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Work
+              <Link href="#work" onClick={() => setMobileMenuOpen(false)} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                {t.nav.work}
               </Link>
 
-              <Link href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Services
+              <Link href="#services" onClick={() => setMobileMenuOpen(false)} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                {t.nav.services}
               </Link>
 
-              <Link href="#process" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Process
+              <Link href="#process" onClick={() => setMobileMenuOpen(false)} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                {t.nav.process}
               </Link>
 
-              {/* Language selector mobile */}
-              <div className="flex gap-2 text-sm text-muted-foreground pt-2">
-                <span className="cursor-pointer hover:text-foreground">ES</span>
-                <span>|</span>
-                <span className="cursor-pointer hover:text-foreground">EN</span>
-              </div>
+              <LangToggle className="pt-2" />
 
-              <Button className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground w-full mt-2">
-                Start a Project
+              <Button asChild className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground w-full mt-2">
+                <a href={waLink(lang)} target="_blank" rel="noopener noreferrer">
+                  {t.nav.startProject}
+                </a>
               </Button>
 
             </nav>

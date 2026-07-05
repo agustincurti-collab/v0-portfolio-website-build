@@ -1,38 +1,30 @@
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
+"use client"
 
+import { ArrowRight } from "lucide-react"
+import { useI18n } from "@/lib/i18n"
+
+// Placeholders — reemplazar con proyectos reales (PetCare, Punto Proteína, MenuKit...)
 const projects = [
   {
-    title: "TaskFlow Productivity App",
-    description: "Productivity tool for remote teams, featuring real-time collaboration and intuitive task management.",
-    tags: ["PRODUCT DESIGN", "MOBILE APP", "PROTOTYPING"],
-    image: "/placeholder.svg?height=400&width=600",
-    featured: true,
+    key: "p1",
+    tags: ["WEB DEVELOPMENT", "SAAS", "NEXT.JS"],
+    ai: false,
   },
   {
-    title: "Neura AI Marketing",
-    description: "Marketing website for an artificial intelligence startup, utilizing WebGL animations and modern typography.",
-    tags: ["WEB DEVELOPMENT", "3D GRAPHICS", "ANIMATION"],
-    image: "/placeholder.svg?height=300&width=400",
-    featured: false,
+    key: "p2",
+    tags: ["E-COMMERCE", "AI TECH", "AUTOMATION"],
+    ai: true,
   },
   {
-    title: "TaskFlow Productivity App",
-    description: "Productivity tool for remote teams, featuring real-time collaboration and intuitive task management.",
-    tags: ["PRODUCT DESIGN", "MOBILE APP", "PROTOTYPING"],
-    image: "/placeholder.svg?height=300&width=400",
-    featured: false,
-  },
-  {
-    title: "Neura AI Marketing",
-    description: "Marketing website for an artificial intelligence startup, utilizing WebGL animations and modern typography.",
-    tags: ["WEB DEVELOPMENT", "3D GRAPHICS", "ANIMATION"],
-    image: "/placeholder.svg?height=400&width=600",
-    featured: true,
+    key: "p3",
+    tags: ["PRODUCT DESIGN", "WEB APP", "PROTOTYPING"],
+    ai: false,
   },
 ]
 
 export function Work() {
+  const { t } = useI18n()
+
   return (
     <section id="work" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -40,36 +32,29 @@ export function Work() {
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-              Selected Work
+              {t.work.title}
             </h2>
             <p className="text-muted-foreground max-w-lg">
-              A selection of websites and e-commerce experiences
-designed to combine modern aesthetics,
-high performance and real business impact.
+              {t.work.subtitle}
             </p>
           </div>
-          <Link
-            href="#"
+          <a
+            href="#work"
             className="flex items-center gap-2 text-sm text-foreground hover:text-accent transition-colors group"
           >
-            View all projects
+            {t.work.viewAll}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Link>
+          </a>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className={`group cursor-pointer ${index === 0 || index === 3 ? 'md:row-span-1' : ''}`}
-            >
-              {/* Project Card */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project) => (
+            <div key={project.key} className="group">
               <div className="bg-card rounded-2xl overflow-hidden border border-border hover:border-accent/50 transition-all duration-300">
-                {/* Image */}
+                {/* Image / Mock */}
                 <div className="relative overflow-hidden bg-gradient-to-br from-purple-900/30 via-blue-900/30 to-pink-900/30 p-6">
                   <div className="aspect-video bg-secondary/50 rounded-lg flex items-center justify-center overflow-hidden">
-                    {/* Mock Dashboard UI */}
                     <div className="w-full h-full p-4">
                       <div className="bg-card/80 rounded-lg h-full p-4 border border-border/50">
                         <div className="h-full flex flex-col gap-2">
@@ -91,8 +76,7 @@ high performance and real business impact.
                       </div>
                     </div>
                   </div>
-                  {/* AI Tag for some projects */}
-                  {(index === 1 || index === 3) && (
+                  {project.ai && (
                     <div className="absolute top-4 right-4 px-3 py-1 bg-accent/20 rounded-full border border-accent/30">
                       <span className="text-xs text-accent font-medium">AI Tech</span>
                     </div>
@@ -100,19 +84,19 @@ high performance and real business impact.
                 </div>
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-accent transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
-                    {project.description}
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
+                      {t.work.soon}
+                    </h3>
+                    <span className="w-2 h-2 rounded-full bg-accent/60 animate-pulse" />
+                  </div>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    {t.work.subtitle}
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-xs text-muted-foreground"
-                      >
-                        {tag} {project.tags.indexOf(tag) < project.tags.length - 1 && "•"}
+                    {project.tags.map((tag, i) => (
+                      <span key={tag} className="text-xs text-muted-foreground">
+                        {tag} {i < project.tags.length - 1 && "•"}
                       </span>
                     ))}
                   </div>
