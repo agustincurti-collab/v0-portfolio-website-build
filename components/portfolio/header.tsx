@@ -39,10 +39,7 @@ export function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
-              <span className="text-accent-foreground font-bold text-sm">AC</span>
-            </div>
-            <span className="font-semibold text-foreground">Agustin Curti</span>
+            <img src="/logo-ac.svg" alt="Agustin Curti" className="w-8 h-8" style={{ filter: "brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(258deg) brightness(89%) contrast(101%)" }} />
           </Link>
 
           {/* Desktop Navigation */}
