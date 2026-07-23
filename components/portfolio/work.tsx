@@ -53,7 +53,7 @@ export function Work() {
             <div key={project.key} className="group">
               <div className="bg-card rounded-2xl overflow-hidden border border-border hover:border-accent/50 transition-all duration-300">
                 {/* Image / Mock */}
-                <div className="relative overflow-hidden bg-gradient-to-br from-purple-900/30 via-blue-900/30 to-pink-900/30 p-6">
+                <div className="relative overflow-hidden bg-gradient-to-br from-lime-950/40 via-background to-lime-900/10 p-6">
                   <div className="aspect-video bg-secondary/50 rounded-lg flex items-center justify-center overflow-hidden">
                     <div className="w-full h-full p-4">
                       <div className="bg-card/80 rounded-lg h-full p-4 border border-border/50">
@@ -67,7 +67,7 @@ export function Work() {
                             {[30, 50, 40, 70, 60, 80, 55, 90].map((h, i) => (
                               <div
                                 key={i}
-                                className="flex-1 bg-gradient-to-t from-purple-500 to-blue-400 rounded-t group-hover:from-purple-400 group-hover:to-blue-300 transition-colors"
+                                className="flex-1 bg-gradient-to-t from-lime-500 to-lime-300 rounded-t group-hover:from-lime-400 group-hover:to-lime-200 transition-colors"
                                 style={{ height: `${h}%` }}
                               />
                             ))}

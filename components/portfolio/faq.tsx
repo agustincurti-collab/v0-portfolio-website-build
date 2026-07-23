@@ -12,7 +12,7 @@ export function FAQ() {
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             {t.faq.titleA}{" "}
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-lime-400 to-lime-200 bg-clip-text text-transparent">
               {t.faq.titleB}
             </span>
           </h2>

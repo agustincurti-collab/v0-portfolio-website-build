@@ -11,8 +11,8 @@ export function Hero() {
     <section className="relative overflow-hidden pt-32 pb-20 px-4 sm:px-6 lg:px-8">
 
       {/* Background Glow */}
-      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-purple-900/30 via-background to-blue-900/30"></div>
-      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-purple-500/20 blur-[180px] rounded-full -z-10"></div>
+      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-lime-950/40 via-background to-background"></div>
+      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-lime-500/15 blur-[180px] rounded-full -z-10"></div>
 
       <div className="max-w-7xl mx-auto text-center">
 
@@ -27,7 +27,7 @@ export function Hero() {
           <span className="text-foreground">{t.hero.titleA}</span>
           <br />
           <span className="text-foreground">{t.hero.titleB} </span>
-          <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-lime-400 to-lime-200 bg-clip-text text-transparent">
             {t.hero.titleC}
           </span>
         </h1>
