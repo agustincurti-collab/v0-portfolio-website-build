@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useI18n, waLink } from "@/lib/i18n"
 
-function Logo({ className = "w-12 h-12 p-1.5" }: { className?: string }) {
+function Logo({ className = "w-14 h-14 p-1.5" }: { className?: string }) {
   return (
     <svg viewBox="0 0 527.3 532.41" className={`${className} text-accent`} fill="currentColor" aria-hidden="true">
       <path d="M219.12,407.56c-4.55-21.23-3.14-36.63-3.13-36.77l3.69-36.94-75.88,139.45h-41.15L306.4,122.5l46.38,76.35,2.73,4.46,5.13-1c.08-.01,7.83-1.49,22.98-1.49s27.38,3.01,27.5,3.03l17.18,4.29L307.88,0,0,532.41l175.31-1.81,52.66-86.63,2.18-3.63-1.94-3.75c-.05-.09-4.92-9.61-9.08-29.04Z"/>
@@ -62,7 +62,7 @@ export function Header() {
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
 
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
