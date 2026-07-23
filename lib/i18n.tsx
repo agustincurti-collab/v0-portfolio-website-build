@@ -178,7 +178,7 @@ export const translations = {
     },
     footer: {
       brandDesc:
-        "Diseñador y desarrollador digital creando experiencias digitales modernas. Basado en Buenos Aires, Argentina 🇦🇷 — trabajando globalmente.",
+        "Diseño y desarrollo experiencias digitales modernas. Desde San Nicolás, Buenos Aires — trabajando con clientes de todo el mundo.",
       navTitle: "Navegación",
       connectTitle: "Conectemos",
       rights: "Todos los derechos reservados.",
@@ -340,7 +340,7 @@ export const translations = {
     },
     footer: {
       brandDesc:
-        "Digital designer & developer crafting modern digital experiences. Based in Buenos Aires, Argentina 🇦🇷 — working globally.",
+        "I design and develop modern digital experiences. Based in San Nicolás, Buenos Aires — working with clients worldwide.",
       navTitle: "Navigation",
       connectTitle: "Connect",
       rights: "All rights reserved.",
