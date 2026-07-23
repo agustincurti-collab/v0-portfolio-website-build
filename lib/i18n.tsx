@@ -36,11 +36,11 @@ export const translations = {
     },
     hero: {
       badge: "DISPONIBLE PARA NUEVOS PROYECTOS",
-      titleA: "Sitios web y experiencias e-commerce premium",
-      titleB: "para marcas",
-      titleC: "en crecimiento.",
+      titleA: "Sitios web y e-commerce de alto nivel",
+      titleB: "para marcas que quieren",
+      titleC: "crecer.",
       subtitle:
-        "Diseño y desarrollo productos digitales modernos que combinan estrategia, diseño y tecnología para ayudar a los negocios a crecer online.",
+        "Diseño y desarrollo sitios web y tiendas online rápidos, hechos a medida y pensados para vender. De la estrategia al lanzamiento.",
       ctaWork: "Ver proyectos destacados",
       ctaProject: "Empezar un proyecto",
     },
@@ -50,7 +50,7 @@ export const translations = {
     work: {
       title: "Proyectos destacados",
       subtitle:
-        "Una selección de sitios web y experiencias e-commerce diseñados para combinar estética moderna, alto rendimiento e impacto real en el negocio.",
+        "Una selección de sitios web y e-commerce que combinan diseño moderno, buen rendimiento e impacto real en el negocio.",
       viewAll: "Ver todos los proyectos",
       soon: "Próximamente",
     },
@@ -58,7 +58,7 @@ export const translations = {
       tag: "SERVICIOS",
       title: "Especialización & Expertise",
       subtitle:
-        "Servicios de diseño y desarrollo enfocados en construir sitios web y productos digitales de alto rendimiento que ayudan a los negocios a crecer online.",
+        "Diseño y desarrollo enfocados en rendimiento, estética y resultados reales para tu negocio.",
       items: [
         {
           title: "Diseño Web & de Producto",
@@ -150,12 +150,12 @@ export const translations = {
         {
           question: "¿Trabajás con proyectos a medida o usás plantillas?",
           answer:
-            "Depende de lo que necesites. Para proyectos que requieren funcionalidad específica o una identidad propia, desarrollo a medida con React y Next.js. Cuando el objetivo es salir rápido y con presupuesto acotado, puedo trabajar sobre WordPress o Tienda Nube. Siempre elijo la opción que mejor se ajusta a tu caso, no una fórmula única.",
+            "Depende de lo que necesites. Si el proyecto pide funcionalidad específica o una identidad propia, lo desarrollo a medida. Si el objetivo es salir rápido y con presupuesto acotado, hay plataformas que resuelven muy bien ese escenario. Lo importante es elegir según tu caso, no aplicar una fórmula única."
         },
         {
           question: "¿Podés integrar pagos, reservas o sistemas a medida?",
           answer:
-            "Sí. Integro pasarelas de pago, sistemas de turnos y reservas, paneles de administración, bases de datos y automatizaciones. Trabajo con Node.js, PostgreSQL y Supabase para la parte de backend, así que el sitio puede ir mucho más allá de lo visual.",
+            "Sí. Pasarelas de pago, sistemas de turnos y reservas, paneles de administración para que gestiones tu contenido sin depender de nadie, y automatizaciones que te ahorran trabajo manual. El sitio puede ir mucho más allá de lo visual."
         },
         {
           question: "¿Qué pasa si ya tengo una web y quiero mejorarla o migrarla?",
@@ -165,14 +165,14 @@ export const translations = {
         {
           question: "¿Cómo elegís la tecnología para cada proyecto?",
           answer:
-            "En base a los objetivos del proyecto, no a mis preferencias. Un e-commerce, una landing y una app web piden herramientas distintas. Trabajo con Next.js, React, Node.js, WordPress, WooCommerce, Tienda Nube y Shopify, entre otras, y elijo según rendimiento, presupuesto y qué tan a medida tiene que ser.",
+            "En base a los objetivos del proyecto, no a mis preferencias. Un e-commerce, una landing y una app web piden herramientas distintas, y elijo según tres cosas: qué tan rápido tiene que cargar, qué presupuesto hay, y qué tanto necesitás que crezca con el tiempo. Vos no tenés que preocuparte por eso, es parte de mi trabajo."
         },
       ],
     },
     cta: {
       titleA: "¿Tenés un proyecto en mente?",
-      titleB: "Construyamos algo grande juntos.",
-      subtitle: "Contame sobre tu proyecto y te respondo para conversar cómo podemos hacerlo realidad.",
+      titleB: "Hagamos algo que funcione de verdad.",
+      subtitle: "Contame sobre tu proyecto y te respondo para ver juntos cómo hacerlo realidad.",
       start: "Empezar un proyecto",
       whatsapp: "Escribir por WhatsApp",
     },
@@ -198,11 +198,11 @@ export const translations = {
     },
     hero: {
       badge: "AVAILABLE FOR NEW PROJECTS",
-      titleA: "Premium websites and e-commerce experiences",
-      titleB: "for",
-      titleC: "growing brands.",
+      titleA: "High-end websites and e-commerce",
+      titleB: "for brands that want to",
+      titleC: "grow.",
       subtitle:
-        "I design and develop modern digital products that combine strategy, design and technology to help businesses grow online.",
+        "I design and develop fast, custom-built websites and online stores made to sell. From strategy to launch.",
       ctaWork: "View Selected Work",
       ctaProject: "Start a Project",
     },
@@ -220,7 +220,7 @@ export const translations = {
       tag: "SERVICES",
       title: "Expertise & Specialization",
       subtitle:
-        "Design and development services focused on building high-performance websites and digital products that help businesses grow online.",
+        "Design and development focused on performance, aesthetics and real results for your business.",
       items: [
         {
           title: "Web & Product Design",
@@ -312,12 +312,12 @@ export const translations = {
         {
           question: "Do you build custom projects or use templates?",
           answer:
-            "It depends on what you need. For projects that require specific functionality or a unique identity, I build custom with React and Next.js. When the goal is to launch fast on a tight budget, I can work on WordPress or Tienda Nube. I always pick the option that fits your case best, not a one-size-fits-all formula.",
+            "It depends on what you need. If the project calls for specific functionality or a unique identity, I build it custom. If the goal is to launch fast on a tight budget, there are platforms that handle that scenario really well. What matters is choosing based on your case, not applying a one-size-fits-all formula."
         },
         {
           question: "Can you integrate payments, bookings or custom systems?",
           answer:
-            "Yes. I integrate payment gateways, scheduling and booking systems, admin dashboards, databases and automations. I work with Node.js, PostgreSQL and Supabase on the backend, so the site can go well beyond the visual layer.",
+            "Yes. Payment gateways, scheduling and booking systems, admin dashboards so you can manage your content without depending on anyone, and automations that save you manual work. The site can go well beyond the visual layer."
         },
         {
           question: "What if I already have a site and want to improve or migrate it?",
@@ -327,14 +327,14 @@ export const translations = {
         {
           question: "How do you choose the technology for each project?",
           answer:
-            "Based on the project's goals, not my preferences. An e-commerce, a landing page and a web app call for different tools. I work with Next.js, React, Node.js, WordPress, WooCommerce, Tienda Nube and Shopify, among others, choosing based on performance, budget and how custom it needs to be.",
+            "Based on the project's goals, not my preferences. An e-commerce, a landing page and a web app call for different tools, and I choose based on three things: how fast it needs to load, what the budget is, and how much it needs to grow over time. You don't have to worry about that — it's part of my job."
         },
       ],
     },
     cta: {
       titleA: "Have a project in mind?",
-      titleB: "Let's build something great together.",
-      subtitle: "Tell me about your project and I'll get back to you to discuss how we can bring it to life.",
+      titleB: "Let's build something that actually works.",
+      subtitle: "Tell me about your project and I'll get back to you to figure out how to make it happen.",
       start: "Start a Project",
       whatsapp: "Chat on WhatsApp",
     },
