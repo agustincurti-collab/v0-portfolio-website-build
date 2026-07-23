@@ -36,9 +36,9 @@ export const translations = {
     },
     hero: {
       badge: "DISPONIBLE PARA NUEVOS PROYECTOS",
-      titleA: "Sitios web y e-commerce de alto nivel",
-      titleB: "para marcas que quieren",
-      titleC: "crecer.",
+      titleA: "Sitios web y experiencias e-commerce premium",
+      titleB: "para marcas",
+      titleC: "en crecimiento.",
       subtitle:
         "Diseño y desarrollo sitios web y tiendas online rápidos, hechos a medida y pensados para vender. De la estrategia al lanzamiento.",
       ctaWork: "Ver proyectos destacados",
@@ -198,9 +198,9 @@ export const translations = {
     },
     hero: {
       badge: "AVAILABLE FOR NEW PROJECTS",
-      titleA: "High-end websites and e-commerce",
-      titleB: "for brands that want to",
-      titleC: "grow.",
+      titleA: "Premium websites and e-commerce experiences",
+      titleB: "for",
+      titleC: "growing brands.",
       subtitle:
         "I design and develop fast, custom-built websites and online stores made to sell. From strategy to launch.",
       ctaWork: "View Selected Work",
