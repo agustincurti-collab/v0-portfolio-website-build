@@ -128,29 +128,14 @@ export const translations = {
       subtitle: "Respuestas claras a las dudas más comunes sobre sitios web, e-commerce y proyectos digitales.",
       items: [
         {
-          question: "¿Qué es un dominio y por qué lo necesito?",
-          answer:
-            "Un dominio es tu dirección única en internet (por ejemplo, tunegocio.com.ar). Es cómo tus clientes te encuentran y cómo podés crear correos profesionales asociados a tu marca.",
-        },
-        {
           question: "¿Qué es el hosting y por qué afecta el precio?",
           answer:
             "El hosting es el servicio que almacena tu sitio web y lo mantiene disponible online. Un buen hosting asegura que tu sitio cargue rápido, se mantenga seguro y accesible en todo momento.",
         },
         {
-          question: "¿Mi sitio web va a funcionar bien en el celular?",
-          answer:
-            "Por supuesto. Todos los sitios se construyen con diseño responsive, garantizando una experiencia fluida en celulares, tablets, notebooks y computadoras de escritorio.",
-        },
-        {
-          question: "¿Qué es un certificado SSL?",
-          answer:
-            "Un certificado SSL encripta los datos que se intercambian entre tu sitio y sus visitantes. Protege información sensible, mejora la confianza y es esencial para los sitios web modernos.",
-        },
-        {
           question: "¿De quién es el sitio web una vez terminado?",
           answer:
-            "Tuyo. El dominio, la cuenta de hosting y los archivos del sitio te pertenecen. Mi objetivo es brindar un servicio transparente donde mantengas la propiedad total de tus activos digitales.",
+            "Tuyo. El dominio, la cuenta de hosting y los archivos del sitio te pertenecen. Trabajo de forma transparente para que mantengas la propiedad total de tus activos digitales.",
         },
         {
           question: "¿Cuánto tarda un proyecto web?",
@@ -158,14 +143,29 @@ export const translations = {
             "Depende del alcance y la complejidad. Una landing page puede tomar solo unos días, mientras que un sitio web de negocio o e-commerce suele requerir entre 2 y 6 semanas.",
         },
         {
-          question: "¿Qué tecnologías usás?",
-          answer:
-            "Trabajo con tecnologías modernas como Next.js, React, WordPress, WooCommerce y Tienda Nube. Cada proyecto se construye con las herramientas más adecuadas según los objetivos, el rendimiento y la escalabilidad.",
-        },
-        {
           question: "¿Por qué es importante el mantenimiento?",
           answer:
             "Los sitios web necesitan actualizaciones, mejoras de seguridad, backups y cambios ocasionales de contenido. El mantenimiento continuo mantiene tu sitio seguro, rápido y funcionando al máximo.",
+        },
+        {
+          question: "¿Trabajás con proyectos a medida o usás plantillas?",
+          answer:
+            "Depende de lo que necesites. Para proyectos que requieren funcionalidad específica o una identidad propia, desarrollo a medida con React y Next.js. Cuando el objetivo es salir rápido y con presupuesto acotado, puedo trabajar sobre WordPress o Tienda Nube. Siempre elijo la opción que mejor se ajusta a tu caso, no una fórmula única.",
+        },
+        {
+          question: "¿Podés integrar pagos, reservas o sistemas a medida?",
+          answer:
+            "Sí. Integro pasarelas de pago, sistemas de turnos y reservas, paneles de administración, bases de datos y automatizaciones. Trabajo con Node.js, PostgreSQL y Supabase para la parte de backend, así que el sitio puede ir mucho más allá de lo visual.",
+        },
+        {
+          question: "¿Qué pasa si ya tengo una web y quiero mejorarla o migrarla?",
+          answer:
+            "Se puede. Puedo tomar un sitio existente para optimizar su rendimiento, rediseñarlo o migrarlo a una tecnología más moderna. Primero reviso cómo está armado y te digo con franqueza si conviene mejorarlo o rehacerlo de cero.",
+        },
+        {
+          question: "¿Cómo elegís la tecnología para cada proyecto?",
+          answer:
+            "En base a los objetivos del proyecto, no a mis preferencias. Un e-commerce, una landing y una app web piden herramientas distintas. Trabajo con Next.js, React, Node.js, WordPress, WooCommerce, Tienda Nube y Shopify, entre otras, y elijo según rendimiento, presupuesto y qué tan a medida tiene que ser.",
         },
       ],
     },
@@ -290,29 +290,14 @@ export const translations = {
       subtitle: "Clear answers to common questions about websites, e-commerce and digital projects.",
       items: [
         {
-          question: "What is a domain name and why do I need one?",
-          answer:
-            "A domain name is your unique address on the internet (for example, yourbusiness.com). It's how customers find your website and how you can create professional email addresses associated with your brand.",
-        },
-        {
           question: "What is hosting and why does it affect pricing?",
           answer:
             "Hosting is the service that stores your website and makes it available online. Quality hosting ensures your site loads quickly, remains secure, and stays accessible to visitors at all times.",
         },
         {
-          question: "Will my website work well on mobile devices?",
-          answer:
-            "Absolutely. Every website is built using responsive design principles, ensuring a seamless experience across smartphones, tablets, laptops, and desktop computers.",
-        },
-        {
-          question: "What is an SSL certificate?",
-          answer:
-            "An SSL certificate encrypts data exchanged between your website and its visitors. It protects sensitive information, improves trust, and is essential for modern websites.",
-        },
-        {
           question: "Who owns the website once it's completed?",
           answer:
-            "You do. The domain, hosting account, and website files belong to you. My goal is to provide a transparent service where you maintain full ownership of your digital assets.",
+            "You do. The domain, hosting account, and website files belong to you. I work transparently so you keep full ownership of your digital assets.",
         },
         {
           question: "How long does a website project take?",
@@ -320,14 +305,29 @@ export const translations = {
             "Timelines vary depending on the project's scope and complexity. A landing page may take only a few days, while a business website or e-commerce project typically requires between 2 and 6 weeks.",
         },
         {
-          question: "Which technologies do you use?",
-          answer:
-            "I work with modern technologies such as Next.js, React, WordPress, WooCommerce, and Tienda Nube. Each project is built using the most suitable tools based on business goals, performance requirements, and scalability needs.",
-        },
-        {
           question: "Why is ongoing maintenance important?",
           answer:
             "Websites require regular updates, security improvements, backups, and occasional content changes. Ongoing maintenance helps keep your site secure, fast, and performing at its best.",
+        },
+        {
+          question: "Do you build custom projects or use templates?",
+          answer:
+            "It depends on what you need. For projects that require specific functionality or a unique identity, I build custom with React and Next.js. When the goal is to launch fast on a tight budget, I can work on WordPress or Tienda Nube. I always pick the option that fits your case best, not a one-size-fits-all formula.",
+        },
+        {
+          question: "Can you integrate payments, bookings or custom systems?",
+          answer:
+            "Yes. I integrate payment gateways, scheduling and booking systems, admin dashboards, databases and automations. I work with Node.js, PostgreSQL and Supabase on the backend, so the site can go well beyond the visual layer.",
+        },
+        {
+          question: "What if I already have a site and want to improve or migrate it?",
+          answer:
+            "That works. I can take an existing site to optimize its performance, redesign it, or migrate it to a more modern stack. I first review how it's built and tell you honestly whether it's better to improve it or rebuild from scratch.",
+        },
+        {
+          question: "How do you choose the technology for each project?",
+          answer:
+            "Based on the project's goals, not my preferences. An e-commerce, a landing page and a web app call for different tools. I work with Next.js, React, Node.js, WordPress, WooCommerce, Tienda Nube and Shopify, among others, choosing based on performance, budget and how custom it needs to be.",
         },
       ],
     },
