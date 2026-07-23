@@ -49,10 +49,10 @@ export function Process() {
                 <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2" className="text-secondary" />
                 <circle cx="50" cy="50" r="45" fill="none" stroke="url(#gradient)" strokeWidth="3" strokeLinecap="round" strokeDasharray="283" strokeDashoffset="0" className="transition-all duration-1000" />
                 <defs>
-                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="#a855f7" />
-                    <stop offset="50%" stopColor="#ec4899" />
-                    <stop offset="100%" stopColor="#3b82f6" />
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#365314" />
+                    <stop offset="45%" stopColor="#a3e635" />
+                    <stop offset="100%" stopColor="#4d7c0f" />
                   </linearGradient>
                 </defs>
               </svg>

@@ -29,7 +29,7 @@ export function CTA() {
           <Button
             asChild
             variant="outline"
-            className="h-auto rounded-full border-border px-8 py-3 text-base text-foreground hover:bg-secondary"
+            className="h-auto rounded-full border border-lime-400/50 bg-transparent px-8 py-3 text-base text-lime-300 hover:bg-lime-400 hover:text-neutral-950 hover:border-lime-400 transition-colors"
           >
             <a href={waLink(lang)} target="_blank" rel="noopener noreferrer">
               {t.cta.whatsapp}
