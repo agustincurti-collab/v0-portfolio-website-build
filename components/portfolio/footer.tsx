@@ -30,9 +30,9 @@ export function Footer() {
               <span className="font-semibold text-foreground">Agustin Curti</span>
             </Link>
 
-            <p className="text-sm text-muted-foreground mb-6 flex items-start gap-2">
-              <span>{t.footer.brandDesc}</span>
-              <svg viewBox="0 0 900 600" className="w-5 h-auto rounded-[2px] shrink-0 mt-0.5" aria-label="Argentina">
+            <p className="text-sm text-muted-foreground mb-6">
+              {t.footer.brandDesc}
+              <svg viewBox="0 0 900 600" className="inline-block w-4 h-auto rounded-[2px] ml-1.5 align-[-2px]" aria-label="Argentina">
                 <rect width="900" height="600" fill="#74acdf"/>
                 <rect y="200" width="900" height="200" fill="#fff"/>
                 <circle cx="450" cy="300" r="45" fill="#f6b40e" stroke="#85340a" strokeWidth="4"/>

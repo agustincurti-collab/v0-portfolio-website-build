@@ -50,7 +50,7 @@ export function Hero() {
           <Button
             asChild
             variant="outline"
-            className="rounded-full border-border hover:bg-secondary text-foreground px-6 py-3 h-auto transition-all duration-300 hover:scale-[1.04]"
+            className="rounded-full border border-lime-400/50 bg-transparent text-lime-300 hover:bg-lime-400 hover:text-neutral-950 hover:border-lime-400 px-6 py-3 h-auto transition-all duration-300 hover:scale-[1.04]"
           >
             <a href={waLink(lang)} target="_blank" rel="noopener noreferrer">
               {t.hero.ctaProject}
