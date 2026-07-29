@@ -93,3 +93,28 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Scrollbar con color de acento (lima) */
+@layer base {
+  /* Chrome, Edge, Safari */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: oklch(0.12 0 0);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, oklch(0.85 0.21 128), oklch(0.6 0.16 140));
+    border-radius: 999px;
+    border: 3px solid oklch(0.12 0 0);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, oklch(0.9 0.21 128), oklch(0.7 0.18 135));
+  }
+  /* Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: oklch(0.85 0.21 128) oklch(0.12 0 0);
+  }
+}
