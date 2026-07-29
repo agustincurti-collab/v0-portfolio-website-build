@@ -33,6 +33,7 @@ export const translations = {
       services: "Servicios",
       process: "Proceso",
       startProject: "Empezar un proyecto",
+      floatChat: "Hablemos",
     },
     hero: {
       badge: "DISPONIBLE PARA NUEVOS PROYECTOS",
@@ -195,6 +196,7 @@ export const translations = {
       services: "Services",
       process: "Process",
       startProject: "Start a Project",
+      floatChat: "Let's talk",
     },
     hero: {
       badge: "AVAILABLE FOR NEW PROJECTS",
