@@ -54,6 +54,12 @@ export const translations = {
         "Una selección de sitios web y e-commerce que combinan diseño moderno, buen rendimiento e impacto real en el negocio.",
       viewAll: "Ver todos los proyectos",
       soon: "Próximamente",
+      visit: "Ver sitio",
+      cat: {
+        web: "Diseño Web",
+        ecommerce: "E-commerce",
+        webapp: "Diseño Web & Web App",
+      },
     },
     services: {
       tag: "SERVICIOS",
@@ -217,6 +223,12 @@ export const translations = {
         "A selection of websites and e-commerce experiences designed to combine modern aesthetics, high performance and real business impact.",
       viewAll: "View all projects",
       soon: "Coming soon",
+      visit: "Visit site",
+      cat: {
+        web: "Web Design",
+        ecommerce: "E-commerce",
+        webapp: "Web Design & Web App",
+      },
     },
     services: {
       tag: "SERVICES",
