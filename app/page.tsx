@@ -8,6 +8,7 @@ import { Stats } from "@/components/portfolio/stats"
 import { FAQ } from "@/components/portfolio/faq"
 import { CTA } from "@/components/portfolio/cta"
 import { Footer } from "@/components/portfolio/footer"
+import { WhatsAppFloat } from "@/components/portfolio/whatsapp-float"
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <FAQ />
       <CTA />
       <Footer />
+      <WhatsAppFloat />
     </main>
   )
 }
