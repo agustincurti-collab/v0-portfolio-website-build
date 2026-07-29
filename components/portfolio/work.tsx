@@ -131,12 +131,12 @@ export function Work() {
               className="group block"
             >
               {/* Imagen con hover */}
-              <div className="relative overflow-hidden rounded-2xl border border-border bg-card aspect-[16/10]">
+              <div className="relative overflow-hidden rounded-2xl border border-border bg-card aspect-[2.07/1]">
                 <img
                   src={p.img}
                   alt={p.name}
                   loading="lazy"
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
                 />
 
                 {/* Overlay al hover */}
