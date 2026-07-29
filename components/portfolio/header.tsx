@@ -162,7 +162,11 @@ export function Header() {
 
             <div className="flex items-center justify-between">
               <LangToggle size="text-base" />
-              <span className="text-xs text-muted-foreground">San Nicolás, BA</span>
+              <svg viewBox="0 0 900 600" className="w-6 h-auto rounded-[2px]" aria-label="Argentina">
+                <rect width="900" height="600" fill="#74acdf"/>
+                <rect y="200" width="900" height="200" fill="#fff"/>
+                <circle cx="450" cy="300" r="45" fill="#f6b40e" stroke="#85340a" strokeWidth="4"/>
+              </svg>
             </div>
           </div>
 
