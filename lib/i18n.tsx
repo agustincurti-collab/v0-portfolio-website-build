@@ -49,7 +49,7 @@ export const translations = {
       title: "TECNOLOGÍAS QUE USO",
     },
     work: {
-      title: "Proyectos destacados",
+      title: "Últimos proyectos",
       subtitle:
         "Una selección de sitios web y e-commerce que combinan diseño moderno, buen rendimiento e impacto real en el negocio.",
       viewAll: "Ver más",
@@ -219,7 +219,7 @@ export const translations = {
       title: "TECHNOLOGIES I USE",
     },
     work: {
-      title: "Selected Work",
+      title: "Latest work",
       subtitle:
         "A selection of websites and e-commerce experiences designed to combine modern aesthetics, high performance and real business impact.",
       viewAll: "Show more",
