@@ -52,10 +52,10 @@ const projects: Project[] = [
     name: "Guitarras Keller",
     img: "/work/keller.webp",
     url: "https://guitarraskeller.com",
-    cat: "ecommerce",
+    cat: "web",
     desc: {
-      es: "Luthier de San Nicolás. Tienda online de guitarras artesanales, hechas una por una, que cruzan el mundo.",
-      en: "Luthier from San Nicolás. Online store for handcrafted guitars, made one by one, shipping worldwide.",
+      es: "Luthier de San Nicolás de los Arroyos. Guitarras artesanales, hechas una por una, que cruzan el mundo entero.",
+      en: "Luthier from San Nicolás de los Arroyos. Handcrafted guitars, made one by one, that travel the entire world.",
     },
   },
   {
@@ -185,14 +185,18 @@ export function Work() {
           ))}
         </div>
 
-        {!showAll && projects.length > 4 && (
+        {projects.length > 4 && (
           <div className="mt-12 flex justify-center">
             <button
-              onClick={() => setShowAll(true)}
+              onClick={() => setShowAll(!showAll)}
               className="group inline-flex items-center gap-2 rounded-full border border-accent/40 bg-transparent px-6 py-3 text-sm font-medium text-accent transition-all duration-300 hover:bg-accent hover:text-accent-foreground"
             >
-              {t.work.viewAll}
-              <ChevronDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
+              {showAll ? t.work.viewLess : t.work.viewAll}
+              <ChevronDown
+                className={`w-4 h-4 transition-transform duration-300 ${
+                  showAll ? "rotate-180 group-hover:-translate-y-0.5" : "group-hover:translate-y-0.5"
+                }`}
+              />
             </button>
           </div>
         )}
