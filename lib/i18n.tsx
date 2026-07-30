@@ -52,7 +52,8 @@ export const translations = {
       title: "Proyectos destacados",
       subtitle:
         "Una selección de sitios web y e-commerce que combinan diseño moderno, buen rendimiento e impacto real en el negocio.",
-      viewAll: "Ver todos los proyectos",
+      viewAll: "Ver más",
+      viewLess: "Ver menos",
       soon: "Próximamente",
       visit: "Ver sitio",
       cat: {
@@ -221,7 +222,8 @@ export const translations = {
       title: "Selected Work",
       subtitle:
         "A selection of websites and e-commerce experiences designed to combine modern aesthetics, high performance and real business impact.",
-      viewAll: "View all projects",
+      viewAll: "Show more",
+      viewLess: "Show less",
       soon: "Coming soon",
       visit: "Visit site",
       cat: {
