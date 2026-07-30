@@ -1,6 +1,7 @@
 "use client"
 
-import { ArrowUpRight } from "lucide-react"
+import { useState } from "react"
+import { ArrowUpRight, ChevronDown } from "lucide-react"
 import { useI18n } from "@/lib/i18n"
 
 type Project = {
@@ -47,6 +48,17 @@ const projects: Project[] = [
     },
   },
   {
+    slug: "keller",
+    name: "Guitarras Keller",
+    img: "/work/keller.webp",
+    url: "https://guitarraskeller.com",
+    cat: "ecommerce",
+    desc: {
+      es: "Luthier de San Nicolás. Tienda online de guitarras artesanales, hechas una por una, que cruzan el mundo.",
+      en: "Luthier from San Nicolás. Online store for handcrafted guitars, made one by one, shipping worldwide.",
+    },
+  },
+  {
     slug: "ara",
     name: "Estudio ARA",
     img: "/work/ara.webp",
@@ -75,8 +87,8 @@ const projects: Project[] = [
     url: "https://www.cocoindumentariadeportiva.com.ar",
     cat: "ecommerce",
     desc: {
-      es: "Indumentaria deportiva de industria argentina. E-commerce con medios de pago en cuotas.",
-      en: "Argentine-made sportswear. E-commerce with installment payment options.",
+      es: "Indumentaria deportiva de industria argentina.",
+      en: "Argentine-made sportswear.",
     },
   },
   {
@@ -86,8 +98,8 @@ const projects: Project[] = [
     url: "https://www.puraviajes.com",
     cat: "web",
     desc: {
-      es: "Empresa de turismo. Sitio de destinos y experiencias con viajes boutique a medida.",
-      en: "Travel company. Destinations and experiences site with custom boutique trips.",
+      es: "Empresa de turismo. Sitio de destinos y experiencias con viajes a medida.",
+      en: "Travel company. Destinations and experiences site with custom trips.",
     },
   },
   {
@@ -105,6 +117,8 @@ const projects: Project[] = [
 
 export function Work() {
   const { t, lang } = useI18n()
+  const [showAll, setShowAll] = useState(false)
+  const visible = showAll ? projects : projects.slice(0, 4)
 
   return (
     <section id="work" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -122,7 +136,7 @@ export function Work() {
 
         {/* Grilla 2 columnas */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          {projects.map((p) => (
+          {visible.map((p) => (
             <a
               key={p.slug}
               href={p.url}
@@ -170,6 +184,18 @@ export function Work() {
             </a>
           ))}
         </div>
+
+        {!showAll && projects.length > 4 && (
+          <div className="mt-12 flex justify-center">
+            <button
+              onClick={() => setShowAll(true)}
+              className="group inline-flex items-center gap-2 rounded-full border border-accent/40 bg-transparent px-6 py-3 text-sm font-medium text-accent transition-all duration-300 hover:bg-accent hover:text-accent-foreground"
+            >
+              {t.work.viewAll}
+              <ChevronDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
+            </button>
+          </div>
+        )}
 
       </div>
     </section>
