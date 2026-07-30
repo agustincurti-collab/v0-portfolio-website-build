@@ -15,12 +15,12 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Header />
       <Hero />
-      <Tech />
       <Work />
       <Services />
       <Process />
       <Stats />
       <FAQ />
+      <Tech />
       <CTA />
       <Footer />
       <WhatsAppFloat />
