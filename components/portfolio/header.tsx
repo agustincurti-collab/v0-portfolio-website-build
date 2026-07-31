@@ -82,9 +82,9 @@ export function Header() {
             <div className="hidden md:flex items-center gap-6">
               <LangToggle />
               <Button asChild className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                <a href={waLink(lang)} target="_blank" rel="noopener noreferrer">
+                <Link href="/presupuesto">
                   {t.nav.startProject}
-                </a>
+                </Link>
               </Button>
             </div>
 
@@ -155,9 +155,9 @@ export function Header() {
             style={{ transitionDelay: open ? "380ms" : "0ms" }}
           >
             <Button asChild className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground w-full h-auto py-4 text-base font-semibold">
-              <a href={waLink(lang)} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+              <Link href="/presupuesto" onClick={() => setOpen(false)}>
                 {t.nav.startProject}
-              </a>
+              </Link>
             </Button>
 
             <div className="flex items-center justify-between">

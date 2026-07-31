@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import { useI18n, waLink } from "@/lib/i18n"
 
 export function CTA() {
@@ -21,9 +22,9 @@ export function CTA() {
 
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button asChild className="h-auto rounded-full bg-accent px-8 py-3 text-base text-accent-foreground shadow-2xl hover:bg-accent/90 transition-all duration-300">
-            <a href={waLink(lang)} target="_blank" rel="noopener noreferrer">
+            <Link href="/presupuesto">
               {t.cta.start}
-            </a>
+            </Link>
           </Button>
 
           <Button
