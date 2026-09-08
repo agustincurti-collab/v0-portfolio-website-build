@@ -19,6 +19,21 @@ const LS_KEY = "ac_propuestas_v1"
 
 type Guardadas = Record<string, Propuesta>
 
+// ⚠️ Estos van FUERA del componente a propósito.
+// Si se definen adentro, React los recrea en cada tecla y los inputs pierden el foco.
+const inp =
+  "w-full bg-secondary border border-border rounded-lg px-3 py-2 text-sm text-foreground outline-none focus:border-accent"
+const lbl = "block text-xs text-muted-foreground mb-1.5"
+
+function Card({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section className="rounded-2xl border border-border bg-card p-5">
+      <h2 className="text-sm font-semibold text-accent uppercase tracking-wide mb-4">{title}</h2>
+      <div className="space-y-4">{children}</div>
+    </section>
+  )
+}
+
 export default function PropuestasPage() {
   const [ok, setOk] = useState(false)
   const [pass, setPass] = useState("")
@@ -160,9 +175,6 @@ export default function PropuestasPage() {
     upd: (i: number, v: T) => set(k, (p[k] as T[]).map((x, j) => (j === i ? v : x))),
   })
 
-  const inp = "w-full bg-secondary border border-border rounded-lg px-3 py-2 text-sm text-foreground outline-none focus:border-accent"
-  const lbl = "block text-xs text-muted-foreground mb-1.5"
-
   const bullets = (k: "queEsBullets" | "incluido" | "noIncluido" | "proximosPasos", titulo: string) => {
     const L = lista<string>(k, "")
     return (
@@ -178,13 +190,6 @@ export default function PropuestasPage() {
       </div>
     )
   }
-
-  const Card = ({ title, children }: { title: string; children: React.ReactNode }) => (
-    <section className="rounded-2xl border border-border bg-card p-5">
-      <h2 className="text-sm font-semibold text-accent uppercase tracking-wide mb-4">{title}</h2>
-      <div className="space-y-4">{children}</div>
-    </section>
-  )
 
   const Lm = lista<{ titulo: string; texto: string }>("modulos", { titulo: "", texto: "" })
   const Lt = lista<{ a: string; b: string; c: string }>("tecnologia", { a: "", b: "", c: "" })
@@ -370,4 +375,3 @@ export default function PropuestasPage() {
     </main>
   )
 }
-
