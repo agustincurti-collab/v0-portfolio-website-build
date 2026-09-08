@@ -118,3 +118,29 @@
     scrollbar-color: oklch(0.85 0.21 128) oklch(0.12 0 0);
   }
 }
+
+/* ── Impresión de propuestas (PDF) ── */
+@media print {
+  /* Mantener el fondo oscuro y los colores de marca en el PDF */
+  html, body {
+    background: #0a0a0a !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .print\:hidden { display: none !important; }
+
+  .prop-doc {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  /* Evitar que las secciones se corten al medio entre páginas */
+  .prop-seccion {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  table { break-inside: auto; }
+  tr { break-inside: avoid; page-break-inside: avoid; }
+
+  @page { margin: 14mm; }
+}
